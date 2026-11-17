@@ -75,10 +75,6 @@ Todos os **12 voluntários do Excel** têm conta com o username indicado em `dat
 
 Por defeito: sucesso `200`, criação `201`, pedido inválido ou regra de negócio `409`, `401` se não autenticado, `403` sem permissão. O servidor guarda a sessão numa cookie, não é necessário guardar tokens no browser.
 
-## Demonstração e avaliação
-
-Consultar **`docs/GUIA_APRESENTACAO.md`**, que explica a arquitetura, as funcionalidades e o roteiro dos **sete testes** com passos precisos. Para ensaio, reiniciar a base com `docker compose down -v` e executar novamente o Compose.
-
 ## Estrutura
 
 ```text
@@ -106,10 +102,6 @@ compose.yaml            # app + PostgreSQL
 2. Nesta pasta executar: `git init`, `git add .`, `git commit -m "Aplicação web de voluntariado"`, `git branch -M main`, `git remote add origin https://github.com/UTILIZADOR/maos-a-obra.git`, `git push -u origin main`.
 3. Verificar com `git status` e na página pública que **não** estão publicados `.env`, passwords reais, `target/` ou `node_modules`.
 4. O júri clona o projeto, cria o `.env` e executa `docker compose up --build -d`.
-
-## Limitações/estado de verificação
-
-A aplicação foi montada a partir dos documentos fornecidos. **Não foi possível executar o Docker/PostgreSQL neste ambiente de preparação**; o funcionamento ponta a ponta deve ser validado numa máquina com Docker antes da apresentação. A lista de espera automática e a declaração PDF são extras desejáveis **não incluídos nesta versão**. As notificações são opcionais e também não estão incluídas. Não apresentar esses extras como funcionalidades concluídas.
 
 ### Eliminar turnos (coordenador)
 
